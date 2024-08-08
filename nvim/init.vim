@@ -37,7 +37,10 @@ set completeopt=menu,preview            " Como mostrar as possibilidade de inser
 set spelllang=pt                        " Escolhe o dicionário
 
 set background=dark
+"colorscheme gruvbox
+
 set mouse=a
+
 
 filetype plugin indent on
 
@@ -58,6 +61,8 @@ set selection=exclusive
 
 call plug#begin('~/.config/nvim/plugged')
 
+    Plug 'morhetz/gruvbox'
+    Plug 'dracula/vim', { 'as': 'dracula'}
     Plug 'scrooloose/nerdtree'
     Plug 'vim-scripts/loremipsum'
     Plug 'vim-scripts/HTML-AutoCloseTag'
@@ -165,3 +170,7 @@ augroup END
 
 
 " }}}
+
+
+
+colorscheme dracula
