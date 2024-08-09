@@ -108,6 +108,9 @@ colorscheme dracula
 inoremap <expr><UP> pumvisible() ? "<UP>" : "<C-O>gk"
 inoremap <expr><DOWN> pumvisible() ? "<DOWN>" : "<C-O>gj"
 
+" Ao digitar < acrescenta > ao final e move o cursor para esquerda
+inoremap < <><LEFT>
+
 " Ao digitar { acrescenta } ao final e move o cursor para esquerda
 inoremap { {}<LEFT>
 
@@ -117,11 +120,22 @@ inoremap [ []<LEFT>
 " Ao digitar ( acrescenta ) ao final e move o cursor para esquerda
 inoremap ( ()<LEFT>
 
-" Ao digitar " acrescenta " ao final e move o cursor para esquerda
+" Ao digitar \" acrescenta " ao final e move o cursor para esquerda
 inoremap " ""<LEFT>
 
 " Ao digitar ' acrescenta ' ao final e move o cursor para esquerda
 inoremap ' ''<LEFT>
+
+" Define uma tecla como tecla leader
+let mapleader = ","
+
+" Coloca os simbolos entre uma palavra que esteja selecionada
+nnoremap <LEADER>" viw<ESC>a"<ESC>bi"<ESC>ela
+nnoremap <LEADER>' viw<ESC>a'<ESC>bi'<ESC>ela
+nnoremap <LEADER>( viw<ESC>a)<ESC>bi(<ESC>ela
+nnoremap <LEADER>[ viw<ESC>a]<ESC>bi[<ESC>ela
+nnoremap <LEADER>{ viw<ESC>a}<ESC>bi{<ESC>ela
+nnoremap <LEADER>< viw<ESC>a><ESC>bi<<ESC>ela
 
 " Move a linha para cima e para baixo
 inoremap <A-UP> <ESC>V y<ESC>dd2kpi
@@ -159,7 +173,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 " Reload do arquivo aberto
-inoremap <C-L> <ESC>:source %
+inoremap <C-l> <ESC>:source %
 
 " Executar arquivo aberto
 map <F5> <ESC>:w<CR>:!%:p<CR>
