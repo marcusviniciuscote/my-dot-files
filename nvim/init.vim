@@ -8,8 +8,8 @@ set relativenumber                      " Adiciona numeração real e quantas li
 set linebreak                           " Quebra a linha sem quebrar a palavra
 set cursorline                          " Destaca a linha do cursor horizontalmente, diretamente abaixo dele.
 set cursorcolumn                        " Destaca a linha do cursor verticalmente, diretamente abaixo dele.
-set shiftwidth=2                        " Define o recuo como 4 espaços.
-set tabstop=2                           " Define ao tamanho da tabulação como 4 espaços.
+set shiftwidth=2                        " Define o recuo como 2 espaços.
+set tabstop=2                           " Define ao tamanho da tabulação como 2 espaços.
 set expandtab                           " Utiliza espaço ao invés de tabulações.
 set nobackup                            " Não salva arquivos de backup.
 set scrolloff=10                        " Não permite que o cursor role abaixo ou acima de um numero N de linhas ao rolar.
@@ -146,6 +146,9 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+" Executar arquivo aberto
+map <F5> <Esc>:w<CR>:!%:p<CR>
 
 " }}}
 
