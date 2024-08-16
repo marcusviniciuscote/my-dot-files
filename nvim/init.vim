@@ -3,21 +3,8 @@
 " zR para abrir todos as dobras.
 " zM para fechar todas as dobras.
  
-" VIMSCRIPT -------------------------------------------------------------- {{{
 
-" Isso vai ativar o código de dobramento.
-" Usa o método de marcadores para realizar o dobramento.
-
-augroup filetype_vim
-  autocmd!
-  autocmd FileType vim setlocal foldmethod=marker
-augroup END
-
-" Aqui ficam mais alguns códigos de Vimscript.
-
-" }}}
-
-" PLUG-INS ---------------------------------------------------------------- {{{
+" PLUG-INS {{{
 " Aqui ficam os códigos dos plug-ins
 
 call plug#begin('~/.config/nvim/plugged')
@@ -37,7 +24,7 @@ call plug#end()
 
 " }}}
 
-" SETS SESSION ------------------------------------------------------------ {{{
+" SETS SESSION {{{
 " Aqui ficam os sets de sessão
 
 set nocompatible                        " Desabilitar a compatibilidade com vi, que pode causar problemas inesperados.
@@ -45,6 +32,8 @@ filetype on                             " Habilitar a detecção do tipo de arqu
 filetype plugin on                      " Habilitar plug-ins e carregar o plug-in correspondente ao tipo de arquivo detectado. 
 filetype indent on                      " Carregar um arquivo de indentação correspondente ao tipo de arquivo detectado.
 syntax enable                           " Ativar o ralce de sintax
+set foldmethod=marker                   " Isso vai ativar o código de dobramento.
+                                        " Usa o método de marcadores para realizar o dobramento.
 set number                              " Adiciona numeração ao lado esquerdo de cada linha.
 set relativenumber                      " Adiciona numeração real e quantas linhas tem para cima e para baixo da mesma
 set linebreak                           " Quebra a linha sem quebrar a palavra
@@ -88,16 +77,16 @@ set selection=exclusive
 
 " }}}
 
-" COLORSCHEME SESSION ----------------------------------------------------- {{{
+" COLORSCHEME SESSION {{{
 " Aqui ficam as configurações de aparência
 
 set background=dark
 "colorscheme gruvbox
 colorscheme dracula
 
-" " }}}
+" }}}
 
-" MAPEAMENTO --------------------------------------------------------------- {{{
+" MAPEAMENTO {{{
 " Aqui ficam os códigos de mapeamento.
 
 " nnoremap – Permite mapear as teclas no modo normal.
@@ -177,13 +166,6 @@ inoremap <C-l> <ESC>:source %
 
 " Executar arquivo aberto
 map <F5> <ESC>:w<CR>:!%:p<CR>
-
-" }}}
-
-" LINHA DE STATUS ----------------------------------------------------------- {{{
-" Aqui ficam os códigos da linha de status.
-
-
 
 " }}}
 
