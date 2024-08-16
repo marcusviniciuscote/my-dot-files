@@ -32,8 +32,8 @@ filetype on                             " Habilitar a detecção do tipo de arqu
 filetype plugin on                      " Habilitar plug-ins e carregar o plug-in correspondente ao tipo de arquivo detectado. 
 filetype indent on                      " Carregar um arquivo de indentação correspondente ao tipo de arquivo detectado.
 syntax enable                           " Ativar o ralce de sintax
-set foldmethod=marker                   " Isso vai ativar o código de dobramento.
-                                        " Usa o método de marcadores para realizar o dobramento.
+set foldmethod=indent                   " Isso vai ativar o código de dobramento.
+                                        " Usa o método de marcadores=marker ou identação=indent para realizar o dobramento.
 set number                              " Adiciona numeração ao lado esquerdo de cada linha.
 set relativenumber                      " Adiciona numeração real e quantas linhas tem para cima e para baixo da mesma
 set linebreak                           " Quebra a linha sem quebrar a palavra
