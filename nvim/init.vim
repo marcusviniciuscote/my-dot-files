@@ -164,8 +164,13 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " Reload do arquivo aberto
 inoremap <C-l> <ESC>:source %
 
+
+let g:python3_host_prog = '/usr/bin/python3'
+
+
 " Executar arquivo aberto
-map <F5> <ESC>:w<CR>:!%:p<CR>
+" map <F5> <ESC>:w<CR>:!%:p<CR>
+map <F5> <ESC>:w<CR>:term %:p<CR> a
 
 " }}}
 
