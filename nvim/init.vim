@@ -81,8 +81,8 @@ set selection=exclusive
 " Aqui ficam as configurações de aparência
 
 set background=dark
-"colorscheme gruvbox
-colorscheme dracula
+colorscheme gruvbox
+" colorscheme dracula
 
 " }}}
 
@@ -165,7 +165,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 inoremap <C-l> <ESC>:source %
 
 
-let g:python3_host_prog = '/usr/bin/python3'
+" let g:python3_host_prog = '/usr/bin/python3'
 
 
 " Executar arquivo aberto
