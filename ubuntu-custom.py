@@ -16,7 +16,7 @@ def aliases_comand(alias, comand):
     comand = comand to execute
     '''
     ac = f'alias {alias}="{comand}"'
-    path = '~/projects/my-dot-files/aliases.zsh'
+    path = '~/.oh-my-zsh/custom/aliases.zsh'
     aliases = 'echo '+'\'alias '+alias+'="'+comand+'"'+'\' >> '+path
     terminal_comand(aliases)
 
