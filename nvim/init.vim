@@ -81,8 +81,8 @@ set selection=exclusive
 " Aqui ficam as configurações de aparência
 
 set background=dark
-colorscheme gruvbox
-" colorscheme dracula
+" colorscheme gruvbox
+colorscheme dracula
 
 " }}}
 
