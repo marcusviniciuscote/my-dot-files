@@ -22,7 +22,7 @@ def aliases_comand(alias, comand):
 
 update_and_upgrade = "sudo apt update && sudo apt upgrade -y"
 shutdown = "shutdown -h now"
-install_some_programs = "sudo apt install -y neofetch vim neovim virtualbox virtualbox-guest-additions-iso virtualbox-guest-utils eza bat zsh zsh-autosuggestions zsh-syntax-highlighting htop curl docker-ce docker-ce-cli containerd.io docker-compose-plugin"
+install_some_programs = "sudo apt install -y neofetch vim neovim eza bat zsh zsh-autosuggestions zsh-syntax-highlighting htop curl"
 install_zsh = "sh -c '$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)'"
 ln_neovim = "ln -s ~/projects/my-dot-files/nvim ~/.config/nvim"
 
