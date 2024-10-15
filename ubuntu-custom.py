@@ -24,10 +24,12 @@ update_and_upgrade = "sudo apt update && sudo apt upgrade -y"
 shutdown = "shutdown -h now"
 install_some_programs = "sudo apt install -y neofetch vim neovim virtualbox virtualbox-guest-additions-iso virtualbox-guest-utils eza bat zsh zsh-autosuggestions zsh-syntax-highlighting htop curl docker-ce docker-ce-cli containerd.io docker-compose-plugin"
 install_zsh = "sh -c '$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)'"
+ln_neovim = "ln -s ~/project/my-dot-files/nvim ~/.config/nvim"
 
 terminal_comand(update_and_upgrade)
 terminal_comand(install_some_programs)
 terminal_comand(install_zsh)
+terminal_comand(ln_neovim)
 
 #setting zsh is default
 default_zsh = "chsh -s /usr/bin/zsh"
