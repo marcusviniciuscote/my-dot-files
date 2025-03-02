@@ -1,4 +1,4 @@
-alias atualiza="sudo apt update && sudo apt upgrade -y"
+alias atualiza="sudo apt update && sudo apt upgrade -y && sudo apt autoremove"
 alias ls="eza --icons"
 alias ls="eza --icons -la"
 alias cat="batcat"

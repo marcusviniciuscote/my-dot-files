@@ -19,6 +19,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'msanders/snipmate.vim'
   Plug 'davidhalter/jedi-vim'
   Plug 'digitaltoad/vim-jade'
+  Plug 'udalov/kotlin-vim'
   Plug 'mustache/vim-mustache-handlebars'
 call plug#end()
 
